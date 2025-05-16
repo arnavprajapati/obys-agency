@@ -24,11 +24,14 @@ function loadingAnimation() {
         }
     })
 
-    tl.to('.line h2, #wait',{
+    tl.to('#wait',{
+        opacity:1,
+    })
+
+    tl.to('.line h2',{
         animationName: "anime",
         opacity: 1
     })
-
 
     tl.to('#loader',{
         opacity: 0,
