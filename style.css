@@ -1,0 +1,144 @@
+@font-face {
+    font-family: japan;
+    src: url('./font/Gilroy-Medium.ttf');
+}
+
+@font-face {
+    font-family: plain-light;
+    src: url('./font/plain-light-webfont\ \(1\).ttf');
+}
+
+@font-face {
+    font-family: plain-regular;
+    src: url('./font/plain-regular-webfont\ \(1\).ttf');
+}
+
+@font-face {
+    font-family: silk-serif-light;
+    src: url('./font/silkserif-lightitalic-webfont\ \(1\)\ \(1\).ttf');
+}
+
+@font-face {
+    font-family: silk-serif-regular;
+    src: url('./font/silkserif-regularitalic-webfont\ \(1\).ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: plain-light;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    color: white;
+}
+
+#loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    background-color: #030303;
+    padding: 15vh 6vw;
+}
+
+.line{
+    /* background-color: red; */
+    height: fit-content;
+    /* margin-bottom: 5px; */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 3vw;
+}
+
+#line1-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+#line1-part1 h5,#line1-part1 h6{
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: silk-serif-light;
+}
+
+#line1-part1 h5{
+    /* background-color: red; */
+    width: 5vw;
+    text-align: right;
+}
+
+.line h1 {
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.line h2{
+    font-size: 4.3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anime {
+    0%{
+        font-family: plain-light;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 1;
+    }
+    48%{
+        font-family: plain-light;
+        -webkit-text-stroke: 1px #fff;
+        color: #fff;
+        font-weight: 500;
+        opacity: 0;
+    }
+    50%{
+        font-family: silk-serif-light;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 1;
+    } 
+    100%{
+        font-family: silk-serif-light;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight: 500;
+        opacity: 0;
+    }
+}
+
+#main {
+    position: relative;
+    background-color: #030303;
+}
+
+#wait{
+    font-family: japan;
+    padding: 10vh 17vw;
+    font-size: 1.2vw;
+    opacity: 0;
+}
+
+#page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: #151515;
+}
