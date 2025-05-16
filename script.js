@@ -20,7 +20,7 @@ function loadingAnimation() {
                 }else{
                     h5timer.innerHTML = grow
                 }
-            }, 27)
+            }, 33)
         }
     })
 

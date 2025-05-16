@@ -112,37 +112,32 @@ body {
 @keyframes anime {
     0%{
         font-family: "plain-light";
-        -webkit-text-stroke: 1px #fff;
+        -webkit-text-stroke: 0.1px #fff;
         color: #fff;
         font-weight: 500;
         opacity: 1;
     }
     48%{
         font-family: "plain-light";
-        -webkit-text-stroke: 1px #fff;
+        -webkit-text-stroke: 0.1px #fff;
         color: #fff;
         font-weight: 500;
-        opacity: 0;
+        opacity: 1;
     }
     50%{
         font-family: "silk-serif-light";
-        -webkit-text-stroke: 1px #fff;
+        -webkit-text-stroke: 0.1px #fff;
         color: transparent;
         font-weight: 500;
         opacity: 1;
     } 
     100%{
         font-family: "silk-serif-light";
-        -webkit-text-stroke: 1px #fff;
+        -webkit-text-stroke: 0.1px #fff;
         color: transparent;
         font-weight: 500;
         opacity: 0;
     }
-}
-
-#main {
-    position: relative;
-    background-color: #030303;
 }
 
 #wait{
@@ -150,6 +145,12 @@ body {
     padding: 10vh 17vw;
     font-size: 1.2vw;
     opacity: 0;
+}
+
+#main {
+    position: relative;
+    background-color: #030303;
+    font-weight: 900;
 }
 
 #page1 {
@@ -185,8 +186,8 @@ body {
     height: fit-content;
     display: flex;
     align-items: center;
-    position: relative;
-    z-index: 9999;
+    /* position: relative; */
+    /* z-index: 9999; */
 }
 
 .hero:nth-child(2){
@@ -198,19 +199,41 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.2vw;
+    position: relative;
 }
 
+#hero1::before{
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-family: silk-serif-light;
+    left: 20%;
+    top: 32%;
+    font-weight: 100;
+}
 
-.hero h2, .hero h3{
+.hero h2{
+    font-size: 7.1vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7vw;
+    border-bottom: 0.5vw solid #fff;
+    padding-bottom: 0.8vw;
+    transition: add ease 0.3s;
+} 
+
+/* .hero h2, .hero h3{
     font-size: 7.2vw;
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.2vw;
-}
+} */
 
 .hero h2:hover{
     -webkit-text-stroke: 1px #fff;
     color: transparent;
+    font-weight: 500;
+    border-bottom: 0.5vw solid #151515;
 }
 
 #page2{
@@ -260,6 +283,12 @@ body {
     font-size: 2vw;
 }
 
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(61, 61, 61);
+    position: relative;
+}
 
 #page4{
     min-height: 100vh;
