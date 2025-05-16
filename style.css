@@ -175,9 +175,15 @@ body {
 }
 
 .hero{
-    /* background-color: red; */
     width: 72%;
     margin-left: 27%;
+    /* background-color: red; */
+    overflow: hidden;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 9999;
 }
 
 .hero:nth-child(2){
@@ -189,4 +195,17 @@ body {
     font-weight: 600;
     text-transform: uppercase;
     line-height: 7.2vw;
+}
+
+
+.hero h2, .hero h3{
+    font-size: 7.2vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 7.2vw;
+}
+
+.hero h2:hover{
+    -webkit-text-stroke: 1px #fff;
+    color: transparent;
 }
