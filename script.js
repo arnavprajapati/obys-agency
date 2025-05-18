@@ -101,22 +101,22 @@ function loadingAnimation() {
     })
 
     tl.from("#hero1, #page2", {
-        opacity:0,
-    },"-=1.2")
+        opacity: 0,
+    }, "-=1.2")
 }
 
 
 function cursorAnimation() {
-    document.addEventListener("mousemove", (dets) => {
+    document.addEventListener("mousemove", function (dets) {
         gsap.to('#crsr', {
             left: dets.x,
             top: dets.y,
-        })
-    })
+        });
+    });
 
-    Shery.makeMagnet("#nav-part2 h4", {});
+    Shery.makeMagnet("#nav-part2 h4");
 }
 
 loadingAnimation()
-// cursorAnimation()
+cursorAnimation()
 locomotiveAnimation()

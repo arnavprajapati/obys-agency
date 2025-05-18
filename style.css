@@ -51,7 +51,7 @@ body {
     position: fixed;
     z-index: 9999;
     mix-blend-mode: difference;
-    transform: translate(-50%,-50%);
+    /* transform: translate(-50%,-50%); */
 }
 
 #loader {
