@@ -111,8 +111,8 @@ function cursorAnimation() {
         gsap.to('#crsr', {
             left: dets.x,
             top: dets.y,
-        });
-    });
+        })
+    })
 
     Shery.makeMagnet("#nav-part2 h4");
 }
